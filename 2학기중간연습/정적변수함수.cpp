@@ -4,13 +4,12 @@ using namespace std;
 
 class CBank {
 private:
-    string name;      // ÀÌ¸§   
-    string account;      // °èÁÂ¹øÈ£
-    int balance;      // ÀÔ±Ý
-    static int cnt;      // ¹è¿­ ¹æ °¹¼ö ¼¼ÁÖ±â À§ÇØ
-
+    string name;      // ì´ë¦„   
+    string account;      // ê³„ì¢Œë²ˆí˜¸
+    int balance;      // ìž…ê¸ˆ
+    static int cnt;      // ë°°ì—´ ë°© ê°¯ìˆ˜ ì„¸ì£¼ê¸° ìœ„í•´
+    static double count;
 public:
-    static int count;
     CBank() {
         this->name = "";
         this->account = "";
@@ -21,7 +20,7 @@ public:
         this->name = name;
         this->account = account;
         this->balance = balance;
-        cout << "»ý¼º" << endl;
+        cout << "ìƒì„±" << endl;
     }
     static int getCnt() {
         return cnt;
@@ -39,7 +38,7 @@ public:
 };
 CBank* cb[10];
 int CBank::cnt = 0;
-int CBank::count = 0;
+int CBank::count = 1.8;
 
 int main() {
     cout << CBank::count << endl;
